@@ -1,0 +1,135 @@
+.portfolio-hero {
+  height: 50vh;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-dark);
+  text-align: center;
+}
+
+.portfolio-hero-content h1 {
+  color: var(--color-text-white);
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  margin-bottom: 15px;
+}
+
+.portfolio-hero-content p {
+  color: var(--color-primary-light);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.portfolio-item:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio-item.reverse {
+  direction: rtl;
+}
+
+.portfolio-item.reverse > * {
+  direction: ltr;
+}
+
+.portfolio-image {
+  position: relative;
+  height: 100%;
+  min-height: 300px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.portfolio-content {
+  padding: 40px;
+}
+
+.portfolio-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.portfolio-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.portfolio-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.portfolio-stat {
+  text-align: center;
+}
+
+.portfolio-stat-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.portfolio-stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .portfolio-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-item,
+  .portfolio-item.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .portfolio-image {
+    min-height: 220px;
+  }
+
+  .portfolio-content {
+    padding: 25px;
+  }
+}
