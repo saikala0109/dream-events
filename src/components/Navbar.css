@@ -89,7 +89,7 @@
 }
 
 .nav-link {
-   color: #ffffff;
+   color: #f4f3f3;
   padding: 8px 14px;
   border-radius: 6px;
   font-size: 0.95rem;
@@ -110,8 +110,8 @@
 }
 
 .active-link {
-  color: #7AB2B2 !important;
-  background: rgba(122, 178, 178, 0.858);
+  color: #083333 !important;
+  background: rgba(7, 64, 64, 0.858);
 }
 /* update colors */
 
