@@ -1,0 +1,257 @@
+/* ═══════════════════════════════════
+   ABOUT PAGE — Dark Teal Theme
+   ═══════════════════════════════════ */
+
+/* ─── Our Story + Stats ─── */
+.about-story {
+  background: var(--color-bg-primary);
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-story-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+
+.about-story-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.about-story-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-stat-card {
+  background: var(--color-bg-card);
+  padding: 30px 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: var(--border-teal);
+  transition: var(--transition-normal);
+}
+
+.about-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-teal);
+  border-color: var(--color-primary);
+}
+
+.about-stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  margin-bottom: 5px;
+}
+
+.about-stat-label {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* ─── Why Choose Us ─── */
+.about-why-choose {
+  background: var(--color-bg-secondary);
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.why-choose-card {
+  background: var(--color-bg-card);
+  padding: 35px 28px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: var(--border-teal);
+  transition: var(--transition-normal);
+}
+
+.why-choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-teal);
+  border-color: var(--color-primary);
+}
+
+.why-choose-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(8, 131, 149, 0.12);
+  border: 1px solid rgba(8, 131, 149, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  transition: var(--transition-normal);
+}
+
+.why-choose-card:hover .why-choose-icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+.why-choose-card h3 {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.why-choose-card p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* ─── Founder Section ─── */
+.about-founder {
+  background: var(--color-bg-primary);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.founder-image-wrapper {
+  position: relative;
+}
+
+.founder-image-frame {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-glow);
+  border: 2px solid rgba(8, 131, 149, 0.3);
+}
+
+.founder-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.founder-image-accent {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid rgba(8, 131, 149, 0.3);
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+
+.founder-content h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--color-white);
+}
+
+.founder-name {
+  font-size: 1.6rem;
+  color: var(--color-primary-light);
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+.founder-role {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 20px !important;
+  letter-spacing: 0.5px;
+}
+
+.founder-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+}
+
+/* ─── CTA ─── */
+.about-cta {
+  background: var(--color-dark-deep);
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(8, 131, 149, 0.15);
+}
+
+.about-cta h2 {
+  color: var(--color-white);
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 35px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-cta-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-color: #25D366 !important;
+  color: #25D366 !important;
+}
+
+.about-cta-whatsapp:hover {
+  background: #25D366 !important;
+  color: var(--color-white) !important;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 992px) {
+  .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+  .founder-grid { grid-template-columns: 1fr; gap: 40px; }
+  .founder-image-wrapper { max-width: 400px; margin: 0 auto; }
+  .founder-content { text-align: center; }
+  .founder-content .section-divider { margin: 0 auto 1rem !important; }
+}
+
+@media (max-width: 768px) {
+  .about-story-grid { grid-template-columns: 1fr; gap: 30px; }
+  .why-choose-grid { grid-template-columns: 1fr; }
+  .about-cta h2 { font-size: 1.8rem; }
+  .founder-image-accent { top: 12px; left: 12px; right: -12px; bottom: -12px; }
+}
+
+@media (max-width: 480px) {
+  .about-stat-number { font-size: 1.8rem; }
+  .founder-image-wrapper { max-width: 300px; }
+}

@@ -1,0 +1,283 @@
+/* ================================
+   DREAM EVENTS & MANAGEMENT
+   Theme: Ocean Teal — #088395 + #7AB2B2
+   ================================ */
+
+:root {
+  /* Primary Teal */
+  --color-primary: #088395;
+  --color-primary-light: #7AB2B2;
+  --color-primary-dark: #066a78;
+  --color-primary-pale: #d0e8e8;
+
+  /* Accent — White & Light */
+  --color-accent: #ffffff;
+  --color-accent-light: #EBF4F6;
+  --color-accent-dark: #cde7ea;
+
+  /* Dark Teal (for hero, footer) */
+  --color-dark: #04313a;
+  --color-dark-light: #064e5a;
+  --color-dark-medium: #055d6b;
+
+  /* Gradient */
+  --gradient-teal: linear-gradient(135deg, #088395, #7AB2B2);
+  --gradient-dark: linear-gradient(135deg, #04313a 0%, #066a78 50%, #088395 100%);
+  --gradient-hero: linear-gradient(135deg, #031d22 0%, #04313a 40%, #055d6b 100%);
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-off-white: #f6fafa;
+  --color-light-gray: #e8f4f4;
+  --color-gray: #6c8c8c;
+  --color-dark-gray: #2d4a4a;
+  --color-black: #0a1a1a;
+
+  /* Text */
+  --color-text-primary: #04313a;
+  --color-text-secondary: #4a6e6e;
+  --color-text-light: #7a9e9e;
+  --color-text-white: #ffffff;
+
+  /* Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #EBF4F6;
+  --color-bg-dark: #04313a;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --section-padding: 80px 0;
+  --container-width: 1200px;
+  --container-padding: 0 20px;
+
+  /* Borders & Shadows */
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+  --shadow-sm: 0 2px 8px rgba(8, 131, 149, 0.06);
+  --shadow-md: 0 4px 20px rgba(8, 131, 149, 0.1);
+  --shadow-lg: 0 8px 40px rgba(8, 131, 149, 0.15);
+  --shadow-glow: 0 4px 25px rgba(8, 131, 149, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+ul { list-style: none; }
+
+/* ---------- Utilities ---------- */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  color: var(--color-text-primary);
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-teal);
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(8, 131, 149, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: var(--color-white);
+  color: var(--color-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-white:hover {
+  background: var(--color-accent-light);
+  transform: translateY(-2px);
+}
+
+/* ---------- Forms ---------- */
+.form-group { margin-bottom: 1.25rem; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--color-light-gray);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  background: var(--color-white);
+  transition: var(--transition-fast);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(8, 131, 149, 0.1);
+}
+
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+.form-alert {
+  padding: 15px 20px;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.form-success {
+  background: #d0e8e8;
+  color: #04313a;
+  border: 1px solid var(--color-primary-light);
+}
+
+.form-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* ---------- Scroll Reveal ---------- */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+  :root { --section-padding: 50px 0; }
+  .btn { padding: 12px 24px; font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.5rem; }
+  :root { --section-padding: 40px 0; }
+}

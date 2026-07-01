@@ -1,0 +1,187 @@
+/* ═══════════════════════════════════
+   VIDEO CAROUSEL SECTION - 3D DEPTH
+   ═══════════════════════════════════ */
+
+.video-carousel-section {
+  background: var(--gradient-dark);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.vc-layout {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Left Text */
+.vc-text {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.vc-text h2 {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.vc-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Arrow Buttons */
+.vc-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.vc-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--color-white);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.vc-arrow:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+  transform: scale(1.05);
+}
+
+/* Carousel Stage */
+.vc-carousel-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.vc-stage {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+/* Cards */
+.vc-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.vc-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* Active card glow */
+.vc-card-active {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(8, 131, 149, 0.2);
+}
+
+.vc-card:hover {
+  cursor: pointer;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 992px) {
+  .vc-layout {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .vc-text {
+    width: 100%;
+  }
+
+  .vc-text .section-divider {
+    margin: 0 auto 1rem !important;
+  }
+
+  .vc-arrows {
+    justify-content: center;
+  }
+
+  .vc-stage {
+    width: 260px;
+    height: 390px;
+  }
+
+  .vc-card {
+    width: 260px;
+    height: 390px;
+  }
+
+  .vc-carousel-wrapper {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-carousel-section {
+    padding: 60px 0;
+  }
+
+  .vc-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .vc-stage {
+    width: 220px;
+    height: 340px;
+  }
+
+  .vc-card {
+    width: 220px;
+    height: 340px;
+  }
+
+  .vc-carousel-wrapper {
+    min-height: 370px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vc-stage {
+    width: 200px;
+    height: 300px;
+  }
+
+  .vc-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .vc-carousel-wrapper {
+    min-height: 330px;
+  }
+}
