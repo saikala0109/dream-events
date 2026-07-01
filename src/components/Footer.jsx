@@ -16,8 +16,8 @@ function Footer() {
             {/* celebrations. From weddings to corporate events, we bring your vision to life. */}
           </p>
           <div className="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon"><FaFacebookF /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon"><FaInstagram /></a>
+            <a href="https://www.facebook.com/share/1Kj8roAX5P/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/dreameventseg?igsh=aGZpd3V3ZGFidXo2" target="_blank" rel="noopener noreferrer" className="social-icon"><FaInstagram /></a>
           </div>
         </div>
 
