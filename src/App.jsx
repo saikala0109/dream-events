@@ -24,7 +24,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/services/:slug" element={<ServicePage />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        {/* <Route path="/portfolio" element={<Portfolio />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
       </Routes>

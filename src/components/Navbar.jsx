@@ -119,9 +119,9 @@ function Navbar() {
               Gallery
             </Link>
 
-            <Link to="/portfolio" className={location.pathname === '/portfolio' ? 'nav-link active-link' : 'nav-link'} onClick={closeMenu}>
+            {/* <Link to="/portfolio" className={location.pathname === '/portfolio' ? 'nav-link active-link' : 'nav-link'} onClick={closeMenu}>
               Portfolio
-            </Link>
+            </Link> */}
 
             <Link to="/contact" className={location.pathname === '/contact' ? 'nav-link active-link' : 'nav-link'} onClick={closeMenu}>
               Contact
